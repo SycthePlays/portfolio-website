@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import profilImg from '../assets/Danish.jpeg'
+
 
 const bio = {
   en: `I am a software architect and digital craftsman dedicated to bridging the gap between complex engineering and intuitive user interfaces. With a focus on performance, scalability, and aesthetic integrity, I transform abstract ideas into high-performance digital reality.`,
@@ -26,7 +28,7 @@ export default function About() {
           <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
           <div className="relative glass-card aspect-square rounded-2xl overflow-hidden border-2 border-white/10">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9mPSNM9D8IWkV0XDf6CILHmk5DkItg9TdJ-v9ATHLlqWkDXl-ac2O2ZAV31Z-rv_U0AyLKdnS6hUEGPJsSxJP0mKckhNh_gwVdaducLHw5V6pY3aVUhC1Yu82tNdwLX31wBVKNJEyhwkzIRL5spzclQgPdOCBnnJ4AckuwvbKYfEvnV6BaEshoSKDzUt51_k18h81e4PPZKcDMa282AeZjLFrsy_MPq2MeOm6TZ5WuRg_TLzIPnVL1zdTTqrrU1dqRIUtS9qHktZv"
+              src={profilImg}
               alt="Danish Ahmad Satria"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
             />
@@ -35,17 +37,15 @@ export default function About() {
           <div className="absolute -bottom-4 -right-4 flex bg-surface-container-high rounded-full p-1 border border-outline-variant/30 shadow-xl">
             <button
               onClick={() => setLang('en')}
-              className={`px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest transition-all ${
-                lang === 'en' ? 'bg-primary-container text-on-primary-container' : 'text-on-surface-variant hover:text-primary'
-              }`}
+              className={`px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest transition-all ${lang === 'en' ? 'bg-primary-container text-on-primary-container' : 'text-on-surface-variant hover:text-primary'
+                }`}
             >
               EN
             </button>
             <button
               onClick={() => setLang('id')}
-              className={`px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest transition-all ${
-                lang === 'id' ? 'bg-primary-container text-on-primary-container' : 'text-on-surface-variant hover:text-primary'
-              }`}
+              className={`px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest transition-all ${lang === 'id' ? 'bg-primary-container text-on-primary-container' : 'text-on-surface-variant hover:text-primary'
+                }`}
             >
               ID
             </button>
