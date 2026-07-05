@@ -3,8 +3,8 @@ import profilImg from '../assets/Danish.jpeg'
 
 
 const bio = {
-  en: `I am a software architect and digital craftsman dedicated to bridging the gap between complex engineering and intuitive user interfaces. With a focus on performance, scalability, and aesthetic integrity, I transform abstract ideas into high-performance digital reality.`,
-  id: `Saya adalah arsitek perangkat lunak dan digital craftsman yang berdedikasi untuk menjembatani kesenjangan antara rekayasa kompleks dan antarmuka pengguna yang intuitif. Dengan fokus pada performa, skalabilitas, dan integritas estetika, saya mengubah ide abstrak menjadi kenyataan digital berkinerja tinggi.`,
+  en: `I am a high school student in Senior High School Labschool Kebayoran, and I am in Grade 12. I am an expert in the field of mathematics, physics, informatics, and microcontrollers such as Arduino and ESP32. I am very interested in engineering and currently competing and participating in hackhatons and engineering internships. I have many achievements in Math Competitions, informatics competitions, internships, science fairs, and passion projects like a Bionic arm and Air Quality Gas Sensor`,
+  id: `Saya adalah siswa kelas 12 di SMA Labschool Kebayoran. Saya memiliki keahlian di bidang matematika, fisika, informatika, dan mikrokontroler seperti Arduino dan ESP32. Saya sangat tertarik dengan bidang teknik dan saat ini aktif berkompetisi, mengikuti hackathon, serta magang di bidang teknik. Saya telah meraih berbagai prestasi dalam kompetisi Matematika, informatika, program magang, science fair, serta proyek mandiri seperti Bionic Arm dan Sensor Gas Kualitas Udara.`,
 }
 
 const stats = [
