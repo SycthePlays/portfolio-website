@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import profilImg from '../assets/Danish.jpeg'
+import { useState, useEffect, useRef } from 'react'
+import profilImg from '../assets/Danish_new.jpg'
 
 
 const bio = {
@@ -15,6 +15,19 @@ const scores = [
 
 export default function About() {
   const [lang, setLang] = useState('en')
+  const [isPhotoInView, setIsPhotoInView] = useState(false)
+  const photoRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsPhotoInView(entry.isIntersecting)
+      },
+      { threshold: 0.5 }
+    )
+    if (photoRef.current) observer.observe(photoRef.current)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <section id="about" className="pt-[160px] pb-[120px] px-gutter max-w-container-max mx-auto relative">
@@ -26,11 +39,11 @@ export default function About() {
         {/* Profile Image */}
         <div className="lg:col-span-5 relative group">
           <div className="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-transparent blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
-          <div className="relative glass-card aspect-square rounded-2xl overflow-hidden border-2 border-white/10">
+          <div className="relative glass-card aspect-square rounded-2xl overflow-hidden border-2 border-white/10" ref={photoRef}>
             <img
               src={profilImg}
               alt="Danish Ahmad Satria"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+              className={`w-full h-full object-cover transition-all duration-700 ${isPhotoInView ? 'grayscale-0 scale-105' : 'grayscale'}`}
             />
           </div>
           {/* Language Toggle */}
