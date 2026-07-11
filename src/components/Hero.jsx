@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const roles = ['Full-stack Developer', 'AI Enthusiast', 'Creative Engineer']
+const roles = ['Electrical Engineering Enthusiast', 'Math Olympian', 'AI & CP Enthusiast', 'Robotics Innovator']
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState('')
@@ -96,8 +96,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="motion-in max-w-2xl text-on-surface-variant text-body-md leading-relaxed mx-auto md:mx-0">
-              Bridging the gap between robust engineering and high-fidelity design. Specializing in
-              building scalable architectures and immersive digital experiences that push technical boundaries.
+              Bridging the gap between hardware and software engineering. Specializing in microcontrollers, robotics, artificial intelligence, and competitive programming, with a strong foundation in competitive mathematics.
             </p>
 
             {/* CTA */}

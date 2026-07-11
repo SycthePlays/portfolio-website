@@ -2,50 +2,60 @@ import { useEffect, useRef } from 'react'
 
 const items = [
   {
-    period: '2022 — Present',
-    title: 'Senior Software Architect',
-    company: 'Global Tech Systems',
+    period: 'Current',
+    title: 'Grade 12',
+    company: 'Labschool Kebayoran',
     color: 'primary',
     dotClass: 'bg-primary',
     textColor: 'text-primary',
     companyColor: 'text-primary-fixed-dim',
     align: 'left',
     points: [
-      '• Spearheaded development of a scalable microservices architecture.',
-      '• Reduced system latency by 45% through strategic caching layers.',
-      '• Mentored a team of 12 full-stack developers across 3 continents.',
+      '• Currently pursuing studies in Grade 12.',
+      '• Active in math olympiads, competitive programming, and robotics.',
     ],
   },
   {
-    period: '2020 — 2022',
-    title: 'Full Stack Developer',
-    company: 'Innovate Digital',
+    period: 'Grade 11',
+    title: 'Grade 11',
+    company: 'Labschool Kebayoran',
     color: 'tertiary',
     dotClass: 'bg-tertiary',
     textColor: 'text-tertiary',
     companyColor: 'text-tertiary-fixed-dim',
     align: 'right',
     points: [
-      '• Delivered 15+ production-grade web applications for Fortune 500 clients.',
-      '• Implemented robust CI/CD pipelines increasing deployment frequency by 4x.',
-      '• Led the transition from legacy monoliths to React-based frontends.',
+      '• Semester 1 Average Grade: 92.68',
+      '• Semester 2 Average Grade: 93.23',
     ],
   },
   {
-    period: '2016 — 2020',
-    title: 'B.Sc. in Computer Science',
-    company: 'University of Technology',
+    period: 'Grade 10',
+    title: 'Grade 10',
+    company: 'Labschool Kebayoran',
     color: 'secondary',
     dotClass: 'bg-secondary-fixed-dim',
     textColor: 'text-secondary-fixed-dim',
     companyColor: 'text-on-secondary-container',
     align: 'left',
     points: [
-      '• Graduated with Honors (First Class).',
-      '• Specialized in Distributed Systems and Neural Networks.',
-      '• Winner of the Annual Collegiate Hackathon (2019).',
+      '• Semester 1 Average Grade: 91.00',
+      '• Semester 2 Average Grade: 91.00',
     ],
   },
+  {
+    period: '7th - 9th Grade',
+    title: 'Junior High School',
+    company: 'Secondary School',
+    color: 'primary',
+    dotClass: 'bg-primary',
+    textColor: 'text-primary',
+    companyColor: 'text-primary-fixed-dim',
+    align: 'right',
+    points: [
+      '• Total Average Score (7th till 9th grade): 94.68',
+    ],
+  }
 ]
 
 export default function Timeline() {
@@ -70,8 +80,8 @@ export default function Timeline() {
     <section id="timeline" className="py-[120px] bg-surface-container-lowest overflow-hidden">
       <div className="px-gutter max-w-[800px] mx-auto">
         <div className="text-center mb-20 space-y-4">
-          <span className="font-label-caps text-label-caps text-primary tracking-widest uppercase">Trajectory</span>
-          <h2 className="font-headline-lg text-headline-lg text-on-surface">Experience &amp; Growth</h2>
+          <span className="font-label-caps text-label-caps text-primary tracking-widest uppercase">Education</span>
+          <h2 className="font-headline-lg text-headline-lg text-on-surface">Academic Journey &amp; Grades</h2>
         </div>
 
         <div className="relative pl-8 md:pl-0">

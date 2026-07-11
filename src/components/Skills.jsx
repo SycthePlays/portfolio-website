@@ -2,48 +2,48 @@ import { useEffect, useRef } from 'react'
 
 const skillGroups = [
   {
-    title: 'PROGRAMMING',
+    title: 'HARDWARE & ELECTRONICS',
     color: 'primary',
     barColor: 'bg-primary',
     textColor: 'text-primary',
     borderColor: 'border-primary',
     mainSkills: [
-      { icon: 'code', name: 'JavaScript', pct: 95 },
-      { icon: 'terminal', name: 'Python', pct: 90 },
+      { icon: 'memory', name: 'Arduino / ESP32', pct: 95 },
+      { icon: 'precision_manufacturing', name: 'Robotics & Sensors', pct: 90 },
     ],
     tags: [
-      { icon: 'integration_instructions', label: 'TypeScript' },
-      { icon: 'database', label: 'SQL' },
+      { icon: 'flash_on', label: 'Soldering' },
+      { icon: 'settings_input_component', label: 'Circuit Design' },
     ],
   },
   {
-    title: 'FRAMEWORKS',
+    title: 'PROGRAMMING & AI',
     color: 'secondary',
     barColor: 'bg-secondary',
     textColor: 'text-secondary',
     borderColor: 'border-secondary',
     mainSkills: [
-      { icon: 'layers', name: 'React / Next.js', pct: 92 },
-      { icon: 'api', name: 'Node.js / Express', pct: 88 },
+      { icon: 'code', name: 'C/C++', pct: 95 },
+      { icon: 'terminal', name: 'Python & AI Models', pct: 90 },
     ],
     tags: [
-      { icon: 'css', label: 'Tailwind CSS' },
-      { icon: 'flutter_dash', label: 'Flutter' },
+      { icon: 'psychology', label: 'Informatics' },
+      { icon: 'emoji_events', label: 'Competitive Programming' },
     ],
   },
   {
-    title: 'INFRASTRUCTURE',
+    title: 'ANALYTICAL SKILLS',
     color: 'tertiary',
     barColor: 'bg-tertiary',
     textColor: 'text-tertiary',
     borderColor: 'border-tertiary',
     mainSkills: [
-      { icon: 'cloud', name: 'Cloud Arch (AWS)', pct: 85 },
-      { icon: 'box', name: 'Docker / K8s', pct: 80 },
+      { icon: 'functions', name: 'Advanced Mathematics', pct: 98 },
+      { icon: 'insights', name: 'Problem Solving', pct: 95 },
     ],
     tags: [
-      { icon: 'account_tree', label: 'Git / CI/CD' },
-      { icon: 'security', label: 'Firebase' },
+      { icon: 'calculate', label: 'Calculus' },
+      { icon: 'bar_chart', label: 'Data Analysis' },
     ],
   },
 ]

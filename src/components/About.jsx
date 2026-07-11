@@ -3,14 +3,14 @@ import profilImg from '../assets/Danish.jpeg'
 
 
 const bio = {
-  en: `I am a high school student in Senior High School Labschool Kebayoran, and I am in Grade 12. I am an expert in the field of mathematics, physics, informatics, and microcontrollers such as Arduino and ESP32. I am very interested in engineering and currently competing and participating in hackhatons and engineering internships. I have many achievements in Math Competitions, informatics competitions, internships, science fairs, and passion projects like a Bionic arm and Air Quality Gas Sensor`,
-  id: `Saya adalah siswa kelas 12 di SMA Labschool Kebayoran. Saya memiliki keahlian di bidang matematika, fisika, informatika, dan mikrokontroler seperti Arduino dan ESP32. Saya sangat tertarik dengan bidang teknik dan saat ini aktif berkompetisi, mengikuti hackathon, serta magang di bidang teknik. Saya telah meraih berbagai prestasi dalam kompetisi Matematika, informatika, program magang, science fair, serta proyek mandiri seperti Bionic Arm dan Sensor Gas Kualitas Udara.`,
+  en: `I am a high school student in Senior High School Labschool Kebayoran, and I am in Grade 12. I am an expert in the field of mathematics, physics, informatics, and microcontrollers such as Arduino and ESP32. I am very interested in engineering and currently competing and participating in hackathons and engineering internships. I have many achievements in Math Competitions, informatics competitions, internships, science fairs, and passion projects like a Bionic arm and Air Quality Gas Sensor. My dream is to pursue Electrical Engineering, Computer Science, or Industrial Engineering at top institutions like NUS, NTU, KAIST, HKUST, University of Waterloo, or University of Toronto.`,
+  id: `Saya adalah siswa kelas 12 di SMA Labschool Kebayoran. Saya memiliki keahlian di bidang matematika, fisika, informatika, dan mikrokontroler seperti Arduino dan ESP32. Saya sangat tertarik dengan bidang teknik dan saat ini aktif berkompetisi, mengikuti hackathon, serta magang di bidang teknik. Saya telah meraih berbagai prestasi dalam kompetisi Matematika, informatika, program magang, science fair, serta proyek mandiri seperti Bionic Arm dan Sensor Gas Kualitas Udara. Impian saya adalah melanjutkan studi di bidang Teknik Elektro, Ilmu Komputer, atau Teknik Industri di institusi top seperti NUS, NTU, KAIST, HKUST, University of Waterloo, atau University of Toronto.`,
 }
 
-const stats = [
-  { value: '5+', label: 'Years Experience' },
-  { value: '50+', label: 'Projects Completed' },
-  { value: '10+', label: 'Tech Stacks' },
+const scores = [
+  { value: '7.5', label: 'IELTS Overall' },
+  { value: '1450', label: 'SAT Total' },
+  { value: '800', label: 'SAT Math' },
 ]
 
 export default function About() {
@@ -64,9 +64,9 @@ export default function About() {
             </p>
           </div>
 
-          {/* Stats */}
+          {/* Scores */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {stats.map(s => (
+            {scores.map(s => (
               <div key={s.label} className="glass-card p-6 rounded-xl flex flex-col gap-2">
                 <span className="font-display-lg text-4xl text-primary font-bold">{s.value}</span>
                 <span className="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">{s.label}</span>
